@@ -14,7 +14,12 @@ public struct NavigationButton<Destination: View, Label: View>: View {
     var action: () -> Bool
     @ViewBuilder var label: () -> Label
 
-
+    public init(destination: Destination, action: () -> Bool, @ViewBuilder label: () -> Label) {
+        self.destination = destination
+        self.action = action
+        self.label = label
+    }
+    
     
     public var body: some View {
         Button(action: {
