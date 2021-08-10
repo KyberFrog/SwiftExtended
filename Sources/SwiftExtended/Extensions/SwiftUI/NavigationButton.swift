@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct NavigationButton<Destination: View, Label: View>: View {
+public struct NavigationButton<Destination: View, Label: View>: View {
     @State private var isNavigating = false
     
     var destination: Destination
@@ -16,7 +16,7 @@ struct NavigationButton<Destination: View, Label: View>: View {
 
 
     
-    var body: some View {
+    public var body: some View {
         Button(action: {
             isNavigating = action()
         }) {
@@ -35,7 +35,9 @@ struct NavigationButton<Destination: View, Label: View>: View {
 struct NavigationButton_Previews: PreviewProvider {
     static var previews: some View {
         NavigationView {
-            NavigationButton(destination: Text("Hello World!"), action: { return true }, label: Text("Navigate!"))
+            NavigationButton(destination: Text("Hello World!"), action: { return true }) {
+                Text("Navigate!")
+            }
         }
     }
 }
