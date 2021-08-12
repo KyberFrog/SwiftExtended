@@ -4,8 +4,10 @@
 //
 //  Created by vladIcedigital on 11.06.2021.
 //
+// Extensions allowing working with dates more comfortable.
 
 import Foundation
+
 
 public extension NSDate {
 	func isBetweeen(date date1: NSDate, andDate date2: NSDate) -> Bool {

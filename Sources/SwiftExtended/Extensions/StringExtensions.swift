@@ -4,9 +4,13 @@
 //
 //  Created by vladIcedigital on 11.06.2021.
 //
+// Extensions allowing working with strings more comfortable.
 
 import Foundation
 import UIKit
+
+
+
 
 public extension String {
 	var length: Int {

@@ -4,6 +4,12 @@
 //
 //  Created by vladIcedigital on 10.08.2021.
 //
+// Implements Navigation Button.
+//
+// Label is a closure returning a View
+// Action is a function checking if the navigation should complete.
+// Destination is a NavigationLink destination.
+//
 
 import SwiftUI
 
