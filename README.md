@@ -1,3 +1,5 @@
 # SwiftExtended
 
-A description of this package.
+SwiftExtended is a library supposed to improve Swift, SwiftUI and UIKit experience.
+
+

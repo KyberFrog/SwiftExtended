@@ -9,7 +9,7 @@ import Foundation
 import SwiftUI
 
 public extension Color {
-    init(named: String) {
+    public init(named: String) {
         self.init(color: UIColor(named: named))
     }
 }
