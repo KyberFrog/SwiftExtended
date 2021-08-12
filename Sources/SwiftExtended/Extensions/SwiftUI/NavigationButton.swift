@@ -2,7 +2,7 @@
 //  NavigationButton.swift
 //  SwiftExtended
 //
-//  Created by Vlad Valkov on 10.08.2021.
+//  Created by vladIcedigital on 10.08.2021.
 //
 
 import SwiftUI

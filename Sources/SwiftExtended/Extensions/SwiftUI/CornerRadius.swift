@@ -1,8 +1,8 @@
 //
-//  SwiftUIView.swift
+//  CornerRadius.swift
 //  
 //
-//  Created by Vlad Valkov on 11.08.2021.
+//  Created by vladIcedigital on 11.08.2021.
 //
 
 import SwiftUI
