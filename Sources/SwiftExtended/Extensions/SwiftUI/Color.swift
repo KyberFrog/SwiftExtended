@@ -13,6 +13,11 @@ import SwiftUI
 
 public extension Color {
     public init(named: String) {
-        self.init(color: UIColor(named: named))
+        if let namedColor = UIColor(named: named) {
+            self.init(namedColor)
+        }
+        else {
+            self.init(UIColor.white)
+        }
     }
 }
