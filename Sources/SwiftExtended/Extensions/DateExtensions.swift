@@ -18,7 +18,7 @@ public extension NSDate {
 
 public extension Date {
 	public func format(_ format:String) -> String {
-		return Date.format(self, format: format)
+		return Date.format(self, format: format, locale: nil)
 	}
     
     public func format(_ format:String, locale: Locale) -> String {
