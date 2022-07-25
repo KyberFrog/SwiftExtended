@@ -17,13 +17,17 @@ public extension NSDate {
 
 
 public extension Date {
-	func format(_ format:String) -> String {
+	public func format(_ format:String) -> String {
 		return Date.format(self, format: format)
 	}
+    
+    public func format(_ format:String, locale: Locale) -> String {
+        return Date.format(self, format: format, locale: locale)
+    }
 	
-	static func format(_ date: Date, format:String) -> String {
+    static func format(_ date: Date, format:String, locale: Locale?) -> String {
 		let formatter = DateFormatter()
-		let locale = Locale(identifier: "en_US_POSIX")
+		let locale = locale ?? Locale(identifier: "en_US_POSIX")
 		formatter.locale = locale
 		formatter.dateFormat = format
 		let string = formatter.string(from: date)
