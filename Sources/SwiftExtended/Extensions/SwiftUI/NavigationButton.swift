@@ -29,6 +29,7 @@ public struct NavigationButton<Destination: View, Label: View>: View {
     
     public var body: some View {
         Button(action: {
+	    isNavigating = false
             isNavigating = action()
         }) {
             label()
